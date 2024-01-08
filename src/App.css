@@ -32,7 +32,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+App {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.title {
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 8rem;
+  font-size: 4vw;
+}
+
+.imgContainer {
+  max-width: 50vw;
+  margin: 4rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.scrollbar-thumb {
+  background-color: #282c34 !important;
+  width: 12px !important;
+  border-radius: 0 !important;
+
+}
+
+.scrollbar-track-y {
+  width: 12px !important;
+  background-color: transparent !important;
 }
