@@ -35,15 +35,15 @@ function App() {
           </div>
         )
       }
-      <div className='container'>
+      <div className='container' style={{ backgroundColor: "#d6d6d6" }}>
         <div className='d-flex justify-content-center align-items-center'>
           <div className='footer'>
-            <h2>Created by CODERANNU  </h2>
+            <h2>Created by CODERANNU ❤️ </h2>
           </div>
 
         </div>
       </div>
-    </div>
+    </div >
 
   );
 }
