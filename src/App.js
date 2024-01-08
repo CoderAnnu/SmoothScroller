@@ -18,7 +18,6 @@ function App() {
   }, [])
 
   const random = () => {
-
     return Math.floor(Math.random() * 50);
 
   }
@@ -27,7 +26,7 @@ function App() {
 
     <div className="App">
       <h1 className="title">React Smooth Scroll</h1>
-      <Scroll /> {/*👈 Like this*/}
+      <Scroll /> {/*👈 we can use elements Like this*/}
 
       {
         images && images.map(
@@ -36,6 +35,14 @@ function App() {
           </div>
         )
       }
+      <div className='container'>
+        <div className='d-flex justify-content-center align-items-center'>
+          <div className='footer'>
+            <h2>Created by CODERANNU  </h2>
+          </div>
+
+        </div>
+      </div>
     </div>
 
   );

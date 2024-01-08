@@ -4,15 +4,17 @@ import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll"
 
 Scrollbar.use(OverscrollPlugin);
 
+// This is for mobile view or mobile version of scrolling 
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-
+// overscrollOptions for making the page Animation
 var overscrollOptions = {
   enable: true,
   effect: 'bounce',
   damping: 0.05,
   maxOverscroll: 150,
 }
+//  this the options of this page Animation objects of the plugins using like a options
 const options = {
   damping: isMobile ? 0.05 : 0.1,
   thumbMinSize: 100,
@@ -20,19 +22,11 @@ const options = {
   alwaysShowTracks: false,
   continuousScrolling: true,
   Plugins: {
-        overscroll: { ...overscrollOptions }
-      }
+    overscroll: { ...overscrollOptions }
+  }
 };
 
-
-// var options = {
-//   damping: 0.07,
-//   Plugins: {
-//     overscroll: { ...overscrollOptions }
-//   }
-
-// }
-
+// THis function works overall functionality if Scroll Element 
 const Scroll = () => {
 
   useEffect(() => {
